@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Usage Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="form">
+        <h1 id="title">Social Media Usage Survey</h1>
+        <p id="description">Help us understand your social media habits and their impact.This quick survey will take
+            just a few minutes.Your input is valuable!</p>
+    </div>
+    <div class="survey">
+        <form id="survey-form">
+            <fieldset name="information">
+                <legend>Basic Information</legend>
+                <label for="name" id="name-label">Enter Your Full Name: <input id="name" type="text" fieldset="inline"
+                        placeholder="Your name" required />
+                </label>
+                <label for="email" id="email-label">Enter Your EmailId: <input id="email" type="email"
+                        placeholder="Email" required /> </label>
+                <label for="number" id="number-label">Enter your age: <input id="number" type="number" min="18"
+                        max="120" placeholder="Age" required /></label>
+                <legend name="gender">What is your gender</legend>
+                <label>
+                    <input type="radio" name="gender" value="male">Male
+                </label>
+                <input type="radio" name="gender" value="Female">Female
+                </label>
+                <input type="radio" name="gender" value="Non-binary">Non-binary
+                </label>
+                <input type="radio" name="gender" value="Prefer not to say">Prefer not to say
+                </label>
+                </label>
+                <label for="occupation">What is your Occupation<select name="occupation" id="occupation">
+                        <option value="">(select one)</option>
+                        <option value="1">Student</option>
+                        <option value="2">Employed</option>
+                        <option value="3">Self-employed</option>
+                        <option value="4">Unemployed</option>
+                        <option value="5">Retired</option>
+                        <option value="5">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset name="social">
+                <legend>Social Media Usage</legend>
+                <p>Which social media paltforms do you use regularly?(select all that type)</p>
+                <label><input type="checkbox" name="social_media[]" value="Instagram" class="inline">Instagram</label>
+                <label><input type="checkbox" name="social_media[]" value="Facebook" class="inline">Facebook</label>
+                <label><input type="checkbox" name="social_media[]" value="Twitter" class="inline">Twitter</label>
+                <label><input type="checkbox" name="social_media[]" value="LinkedIN" class="inline">LinkedIn</label>
+                <label><input type="checkbox" name="social_media[]" value="Snapchat" class="inline">Snapchat</label>
+                <label><input type="checkbox" name="social_media[]" value="TikTok" class="inline">TikTok</label>
+                <label><input type="checkbox" name="social_media[]" value="Pinterest" class="inline">Pinterest</label>
+                <label><input type="checkbox" name="social_media[]" value="Reddit" class="inline">Reddit</label>
+                <p>How many hours per day do you spend on social media?</p>
+                <label><input type="checkbox" name="hours" value="Less_than_1_hour">Less than 1 hour </label>
+                <label><input type="checkbox" name="hours" value="1-2_hours">1-2 hours </label>
+                <label><input type="checkbox" name="hours" value="2-4_hours">2-4 hours </label>
+                <label><input type="checkbox" name="hours" value="4-6_hours">4-6 hours </label>
+                <label><input type="checkbox" name="hours" value="More_than_6_hours">More than 6 hours </label>
+                <label for="use">What is the primary reason you use social media? (Select one)<select name="use"
+                        id="use">
+                        <option value="">(select one)</option>
+                        <option value="1">Connecting with friends and family</option>
+                        <option value="2">Networking for work or business</option>
+                        <option value="3">Entertainment (videos, memes, etc.)</option>
+                        <option value="4">News and information</option>
+                        <option value="5">Educational purposes</option>
+                        <option value="6">Other</option>
+                    </select>
+                </label>
+                <label for="dropdown">How often do you check your social media accounts?<select id="dropdown"
+                        name="use">
+                        <option value="">(select one)</option>
+                        <option value="1">Multiple times a day</option>
+                        <option value="2">Once a day</option>
+                        <option value="3">A few tiems a week</option>
+                        <option value="4">Once a week</option>
+                        <option value="5">Less frequently</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset name="impact">
+                <legend>Impact and Behaviour</legend>
+                <label for="time">How do you feel after spending tiem on social media?<select id="time" name="time">
+                        <option value="">(select one)</option>
+                        <option value="1">Very Positive</option>
+                        <option value="2">Positive</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Negative</option>
+                        <option value="5">Very Negative</option>
+                    </select>
+                </label>
+                <label for="productivity">Do you feel that social media affects your productivity?<select
+                        id="productivity" name="productivity">
+                        <option value="">(select one)</option>
+                        <option value="1">Yes, it increases my productivity</option>
+                        <option value="2">Yes, it decreases my productivity</option>
+                        <option value="3">No, it does not effect my productivity</option>
+                    </select>
+                </label>
+                <label for="break">Have you ever taken a break from social media? If yes, how long was the break<select
+                        id="break" name="break">
+                        <option value="">(select one)</option>
+                        <option value="1">Yes, less than a week</option>
+                        <option value="2">Yes, 1-2 weeks</option>
+                        <option value="3">Yes, 1-3 months</option>
+                        <option value="4">Yes, more than 3 months</option>
+                        <option value="5">No, I have never taken a break</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset name="privacy">
+                <legend>Privacy and Security</legend>
+                <label for="privacy">Are you concerned about your privacy on social media?<select id="privacy"
+                        name="privacy">
+                        <option value="">(select one)</option>
+                        <option value="1">Very concerned</option>
+                        <option value="2">Somewhat concerned</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Not very concerned</option>
+                        <option value="5">Not concerned at all</option>
+                    </select>
+                </label>
+                <label for="changed">Have you ever changed your privacy setting on social media?<select id="changed"
+                        name="changed">
+                        <option value="">(select one)</option>
+                        <option value="1">Yes, regularly</option>
+                        <option value="2">Yes, occasionally</option>
+                        <option value="3">No, I have never changed my privacy settings</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset name="trend">
+                <legend>Preferences and Trends</legend>
+                <p>Which type of content do you engage with the most on social media? (Select all that apply)</p>
+                <label><input type="checkbox" name="content_engage[]" class="inline" value="Photos_and_videos">Photos
+                    and images</label>
+                <label><input type="checkbox" name="content_engage[]" class="inline" value="Videos">Videos</label>
+                <label><input type="checkbox" name="content_engage[]" class="inline"
+                        value="Articles_and_blog_post">Articles and blog posts</label>
+                <label><input type="checkbox" name="content_engage[]" class="inline" value="Memes_and_jokes">Memes and
+                    jokes</label>
+                <label><input type="checkbox" name="content_engage[]" class="inline" value="Status_updates">Status
+                    updates</label>
+                <label><input type="checkbox" name="content_engage[]" class="inline" value="Live_streams">Live
+                    streams</label>
+                <label><input type="checkbox" name="content_engage[]" class="inline" value="Stories">Stories (e.g.,
+                    Instagram Stories, Snapchat Stories)</label>
+                <label><input type="checkbox" name="content_engage[]" class="inline" value="other">Other</label>
+                <!-- next question -->
+                <label for="figures">Do you follow any influencers or public figures on social media<select id="figures"
+                        name="figures">
+                        <option value="">(select one)</option>
+                        <option value="1">Yes, many</option>
+                        <option value="2">Yes, a few</option>
+                        <option value="3">No, none</option>
+                    </select>
+                </label>
+                <label for="ad">Would you consider paying for an ad-free social media experience?<select id="ad"
+                        name="id">
+                        <option value="">(select one)</option>
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                        <option value="3">Maybe</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset name="future">
+                <legend>Future of Social Media</legend>
+                <label for="fut">How do you think social media will evolve in the next 5 years? <br><br> <textarea
+                        id="fut" name="fut" rows="6" cols="70"
+                        placeholder="Your opinion how social media will evolve in next 5 years......"></textarea>
+                </label>
+                <fieldset name="cahnges">
+                    <label for="chg">What features or changes would you like to see on social media platforms? <br><br>
+                        <textarea id="chg" name="chg" rows="6" cols="70"
+                            placeholder="Any new feature you wanna see or some changes you want in the current social media platform....."></textarea>
+                    </label>
+                </fieldset>
+                <br><input type="submit" id="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+
+</html>

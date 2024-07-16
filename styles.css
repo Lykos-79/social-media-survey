@@ -1,0 +1,76 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: center;
+    background-image: url(https://imgs.search.brave.com/LRjnydqh_-PGyQ5d4rcFAfNCs7p7CqF3s23WwVOYTJk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNC8w/My8yMi8yMi8xNS9z/b2NpYWwtbWVkaWEt/MjkyOTg4XzY0MC5q/cGc);
+    background-size: cover;
+    padding-top: 30px;
+
+}
+
+p {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+
+}
+
+.survey,
+.form {
+    width: 90%;
+    background-color: rgba(232, 203, 168);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    max-width: 900px;
+
+}
+
+div {
+    border: none;
+    padding: 1rem 0;
+    border-bottom: 3px solid #b88d61;
+}
+
+fieldset {
+    border: none;
+    padding: 1rem 0;
+    border-bottom: 3px solid #b88d61;
+}
+
+legend {
+    text-decoration: underline;
+    color: rgb(122, 50, 5);
+    padding-top: 20px;
+}
+
+fieldset[name="social"] label {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+fieldset[name="trend"] label {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.gender{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 10%;
+    margin: 0.5em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #c68b32;
+    border-color: white;
+    min-width: 300px;
+}
